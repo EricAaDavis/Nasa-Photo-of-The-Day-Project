@@ -13,6 +13,8 @@
 		20CC2D102710BC8800DFEC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CC2D0E2710BC8800DFEC61 /* Main.storyboard */; };
 		20CC2D122710BC8D00DFEC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CC2D112710BC8D00DFEC61 /* Assets.xcassets */; };
 		20CC2D152710BC8D00DFEC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CC2D132710BC8D00DFEC61 /* LaunchScreen.storyboard */; };
+		20CC2D222710CC7600DFEC61 /* PhotoOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC2D212710CC7600DFEC61 /* PhotoOfTheDay.swift */; };
+		20CC2D242710CDCB00DFEC61 /* PhotoOfTheDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CC2D232710CDCB00DFEC61 /* PhotoOfTheDayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		20CC2D112710BC8D00DFEC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20CC2D142710BC8D00DFEC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20CC2D162710BC8D00DFEC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CC2D212710CC7600DFEC61 /* PhotoOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDay.swift; sourceTree = "<group>"; };
+		20CC2D232710CDCB00DFEC61 /* PhotoOfTheDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		20CC2D072710BC8800DFEC61 /* Nasa Photo of The Day */ = {
 			isa = PBXGroup;
 			children = (
+				20CC2D202710CBF800DFEC61 /* Controller */,
+				20CC2D1F2710CBEF00DFEC61 /* View */,
+				20CC2D1E2710CBE500DFEC61 /* Model */,
 				20CC2D082710BC8800DFEC61 /* AppDelegate.swift */,
 				20CC2D0A2710BC8800DFEC61 /* SceneDelegate.swift */,
-				20CC2D0C2710BC8800DFEC61 /* ViewController.swift */,
-				20CC2D0E2710BC8800DFEC61 /* Main.storyboard */,
 				20CC2D112710BC8D00DFEC61 /* Assets.xcassets */,
-				20CC2D132710BC8D00DFEC61 /* LaunchScreen.storyboard */,
 				20CC2D162710BC8D00DFEC61 /* Info.plist */,
 			);
 			path = "Nasa Photo of The Day";
+			sourceTree = "<group>";
+		};
+		20CC2D1E2710CBE500DFEC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20CC2D212710CC7600DFEC61 /* PhotoOfTheDay.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20CC2D1F2710CBEF00DFEC61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20CC2D0E2710BC8800DFEC61 /* Main.storyboard */,
+				20CC2D132710BC8D00DFEC61 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20CC2D202710CBF800DFEC61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20CC2D0C2710BC8800DFEC61 /* ViewController.swift */,
+				20CC2D232710CDCB00DFEC61 /* PhotoOfTheDayController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CC2D222710CC7600DFEC61 /* PhotoOfTheDay.swift in Sources */,
 				20CC2D0D2710BC8800DFEC61 /* ViewController.swift in Sources */,
+				20CC2D242710CDCB00DFEC61 /* PhotoOfTheDayController.swift in Sources */,
 				20CC2D092710BC8800DFEC61 /* AppDelegate.swift in Sources */,
 				20CC2D0B2710BC8800DFEC61 /* SceneDelegate.swift in Sources */,
 			);
